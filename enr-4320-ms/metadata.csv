@@ -1,0 +1,10 @@
+column_name,role,data_type,unit,description,valid_values_or_mapping
+ID,identifier,integer,,Unique row identifier.,Positive integer
+Duration,feature,float,s,Time interval from the initial threshold crossing to the last threshold crossing.,
+Rising_time,feature,float,s,Time interval from the initial threshold crossing to the maximum signal amplitude.,
+Absolute_amplitude,feature,float,mV,Maximum absolute amplitude of the recorded signal.,
+Relative_amplitude,feature,float,dimensionless,Ratio of the maximum absolute amplitude to the sum of the absolute amplitudes of the signal.,
+Pseudo_energy,feature,float,mV·s,Pseudo-energy attribute derived from the absolute waveform amplitude integrated over time.,
+Pseudo_freq,feature,float,s^-1,Pseudo-frequency attribute derived from signal activity above the threshold relative to signal duration.,
+Label,training target,categorical string,,Signal class provided in train.csv. Participants should encode this categorical label numerically before neural-network training.,microseismic; blasting; drilling; scaling; electric noise
+Class,submission target,integer,,Integer class label required in sample_submission.csv and Kaggle submissions.,0=Microseismic; 1=Blasting; 2=Drilling; 3=Scaling; 4=Electrical Noise
