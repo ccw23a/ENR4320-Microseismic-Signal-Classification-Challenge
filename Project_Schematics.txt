@@ -1,0 +1,43 @@
+1. We need to determine what types of Seismic data be
+2. adopted simple amplituded threshold-based triggering method
+3. typical value of threshold is 2-3 times the amplitude of background noise
+
+b.n : 10-20 mV
+Threshold : 50mV
+
+Time Window : 0.5s
+F.r 50Hz, ~ 5kHz
+
+Hourly
+
+Noise : Blasting, Drilling, Electrical Noise, Scaling, Microseismic(Main)
+but need to know on types of those noises as well
+
+Observer`s Log
+
+Noise vs Microseismic
+
+Limestone mine -> relatively stable
+-> Coal Mine could be dangerous
+-------------------------------------------------------------------------------------------------------------
+
+Classical Machine Learining -> Feature Engineering
+time and accuracy balanced
+
+Black Box Problem
+-> develop prediction model based on large dataset
+-> impossible for assessing perf of model
+-> Explanable AI (Sensivity Analysis)
+Lets sat we have inastance A
+
+A -> DLModel -> Prediction 
+
+Could visualize sensivity of input value
+lets say A is cat, and we want to classify Cat/dog
+
+takes a lot time/difficult to explain that kind of reson of performance
+So we mostly say DL as Black Box
+------------------------------------------------------------------------------------------------------------
+
+Deep Neural Network Model only
+feature engineering allowed (importance)
